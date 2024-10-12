@@ -1,0 +1,52 @@
+[
+    {
+        "id": "a1b2c3d4.e5f6g7",
+        "type": "mqtt in",
+        "z": "1a2b3c4d.e5f6g7",
+        "name": "MQTT Input",
+        "topic": "farm/sensors",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "b1c2d3e4.f5g6h7",
+        "x": 140,
+        "y": 120,
+        "wires": [["d1e2f3g4.h5i6j7"]]
+    },
+    {
+        "id": "d1e2f3g4.h5i6j7",
+        "type": "debug",
+        "z": "1a2b3c4d.e5f6g7",
+        "name": "Display MQTT Message",
+        "active": true,
+        "tosidebar": true,
+        "tovalues": false,
+        "tosuccess": false,
+        "toerror": false,
+        "x": 360,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b1c2d3e4.f5g6h7",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "HiveMQ Broker",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthtopic": "",
+        "birthpayload": "",
+        "birthqos": "0",
+        "birthretain": false,
+        "willtopic": "",
+        "willpayload": "",
+        "willqos": "0",
+        "willretain": false,
+        "sessionexp": "",
+        "json": true
+    }
+]
